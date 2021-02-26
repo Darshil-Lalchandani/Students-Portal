@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h2.page-header Login
+  p Please login using the below form
+  form(method='post' action='/users/login')
+    .form-group
+      label Roll-No
+      input.form-control(name='rollno' type='text' placeholder='Enter your roll no(eg UI18CO05)')
+    .form-group
+      label Password
+      input.form-control(name='password' type='password' placeholder='Enter your password')
+    input.btn.btn-primary(type='submit' name='submit' value='LogIn')
