@@ -6,13 +6,31 @@
 a {
   color: #00B7FF;
 }*/
+
+body {
+  background-color: #e5eaf0;
+  font-family: 'Manrope', sans-serif;
+}
+
+.navbar-inverse {
+  background-color: #152238;
+  font-family: 'Manrope', sans-serif;
+}
+
+.active a{
+  background-color: #dddddd !important;
+  color: black !important;
+  border-radius: 4px;
+  opacity: 0.9;
+}
+
 ul.success li{
   padding: 15px;
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #dff0d8;
-  color: #3c763d;
+  background-color: #2E8B57;
+  color: #7FFFD4;
 }
 
 ul.error li{
@@ -20,6 +38,6 @@ ul.error li{
   margin-bottom: 20px;
   border: 1px solid transparent;
   border-radius: 4px;
-  background-color: #f2dede;
-  color: #a94442;
+  background-color: #DC143C;
+  color: #ffcccc;
 }
