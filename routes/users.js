@@ -18,6 +18,10 @@ router.get('/login', function(req, res, next) {
   res.render('login', {title : 'Login'});
 });
 
+router.get('/profile', (req, res) => {
+  res.render('index', {name : req.user.name});
+});
+
 passport.serializeUser(function(user, done) {
   done(null, user.id);
 });
@@ -50,7 +54,7 @@ router.post('/login',
   passport.authenticate('local', {failureRedirect : '/users/login', failureFlash : 'Invalid username or password'}),
   function(req, res) {
     req.flash('success', 'You are now Logged In');
-    res.redirect('/');
+    res.redirect('/users/profile');
   });
 
 
